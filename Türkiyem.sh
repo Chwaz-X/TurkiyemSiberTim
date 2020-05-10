@@ -27,7 +27,6 @@ read -p $'\e[31mSEÇİM YAPINIZ=>\e[37m' secim
 if [[ $secim == 00 ]]; then
 clear
 echo -e '\e[34mKurulum Başladı'
-cd
 pkg install git -y
 pkg  update -y
 pkg upgrade -y
@@ -46,7 +45,6 @@ pkg install nmap -y
 pkg install hydra  -y
 pkg install openssl -y
 apt install nodejs -y
-cd T-rkiyeSiberTim
 bash Türkiyem.sh
 
 elif [[ $secim == 01 || $secim == 1 ]]; then 
